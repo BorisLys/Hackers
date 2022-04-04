@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="506-JC-FDt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20034" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="506-JC-FDt">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20017"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -63,8 +63,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="separatorColor" name="separatorColor"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PostCell" rowHeight="77" id="bpe-eU-o38" customClass="PostCell" customModule="Hackers" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="24.5" width="375" height="77"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ItemCell" rowHeight="77" id="bpe-eU-o38" customClass="PostCell" customModule="Hackers" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="375" height="77"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bpe-eU-o38" id="BKa-yl-PzM">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
@@ -77,6 +77,9 @@
                                                     <rect key="frame" x="0.0" y="0.5" width="60" height="54"/>
                                                     <color key="backgroundColor" name="groupedTableViewBackgroundColor"/>
                                                     <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <bool key="isElement" value="YES"/>
+                                                    </accessibility>
                                                     <gestureRecognizers/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="60" id="5b9-dr-XXc"/>
@@ -109,6 +112,9 @@
                                                             </subviews>
                                                         </stackView>
                                                     </subviews>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <bool key="isElement" value="YES"/>
+                                                    </accessibility>
                                                     <constraints>
                                                         <constraint firstAttribute="bottom" secondItem="siM-Zi-8Sk" secondAttribute="bottom" id="IfM-6g-Qkh"/>
                                                         <constraint firstItem="siM-Zi-8Sk" firstAttribute="top" secondItem="fFz-HF-Y5S" secondAttribute="top" id="hqz-Uy-Fb7"/>
@@ -125,6 +131,9 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LyR-Eg-785" userLabel="Separator View">
                                             <rect key="frame" x="88" y="76.5" width="287" height="0.5"/>
                                             <color key="backgroundColor" name="separatorColor"/>
+                                            <accessibility key="accessibilityConfiguration">
+                                                <bool key="isElement" value="YES"/>
+                                            </accessibility>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="0.5" id="dLW-hF-nHZ"/>
                                             </constraints>
@@ -140,7 +149,9 @@
                                         <constraint firstItem="I5m-DV-Pgi" firstAttribute="leading" secondItem="BKa-yl-PzM" secondAttribute="leading" constant="15" id="qeg-6o-OWW"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <accessibility key="accessibilityConfiguration" identifier="PostCell"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <gestureRecognizers/>
                                 <inset key="separatorInset" minX="88" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <connections>
@@ -150,7 +161,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="OpenCommentCell" rowHeight="144" id="cqK-Qe-Eib" userLabel="Open Comment Cell" customClass="CommentTableViewCell" customModule="Hackers" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="101.5" width="375" height="144"/>
+                                <rect key="frame" x="0.0" y="121.5" width="375" height="144"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cqK-Qe-Eib" id="cbj-iP-y7N">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="144"/>
@@ -171,6 +182,9 @@
                                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sbd-17-xKG" userLabel="Separator View">
                                             <rect key="frame" x="10" y="143.5" width="365" height="0.5"/>
                                             <color key="backgroundColor" name="separatorColor"/>
+                                            <accessibility key="accessibilityConfiguration">
+                                                <bool key="isElement" value="YES"/>
+                                            </accessibility>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="0.5" id="6em-OD-D0o"/>
                                             </constraints>
@@ -186,6 +200,9 @@
                                         </label>
                                         <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PointsIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Sef-jo-KdV">
                                             <rect key="frame" x="58.5" y="13.5" width="14" height="14"/>
+                                            <accessibility key="accessibilityConfiguration">
+                                                <bool key="isElement" value="YES"/>
+                                            </accessibility>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="14" id="5Mw-qs-KlH"/>
                                                 <constraint firstAttribute="height" constant="14" id="gtP-Tw-L8K"/>
@@ -231,7 +248,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ClosedCommentCell" rowHeight="42" id="SRx-1V-zp4" userLabel="Closed Comment Cell" customClass="CommentTableViewCell" customModule="Hackers" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="245.5" width="375" height="42"/>
+                                <rect key="frame" x="0.0" y="265.5" width="375" height="42"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SRx-1V-zp4" id="MAZ-eW-f1R">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="42"/>
@@ -240,6 +257,9 @@
                                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yXr-Oq-Vwx" userLabel="Separator View">
                                             <rect key="frame" x="10" y="41.5" width="365" height="0.5"/>
                                             <color key="backgroundColor" name="separatorColor"/>
+                                            <accessibility key="accessibilityConfiguration">
+                                                <bool key="isElement" value="YES"/>
+                                            </accessibility>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="0.5" id="Xqh-mI-iBI"/>
                                             </constraints>
@@ -327,7 +347,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <view key="tableFooterView" contentMode="scaleToFill" id="HBZ-Wx-9of">
-                            <rect key="frame" x="0.0" y="651" width="375" height="44"/>
+                            <rect key="frame" x="0.0" y="647.5" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 3.0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vai-hd-k76">
@@ -392,14 +412,14 @@
                                         <color key="backgroundColor" systemColor="tableCellGroupedBackgroundColor"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="qQX-ZY-Ize" style="IBUITableViewCellStyleDefault" id="eLs-tl-nhE" customClass="SettingsTableViewCell" customModule="Hackers" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="131" width="343" height="44"/>
+                                        <rect key="frame" x="16" y="131" width="343" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eLs-tl-nhE" id="dHF-kW-kGX">
-                                            <rect key="frame" x="0.0" y="0.0" width="317.5" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="318.5" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Hackers on GitHub" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qQX-ZY-Ize">
-                                                    <rect key="frame" x="16" y="0.0" width="293.5" height="44"/>
+                                                    <rect key="frame" x="16" y="0.0" width="294.5" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -410,14 +430,14 @@
                                         <color key="backgroundColor" systemColor="tableCellGroupedBackgroundColor"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="Mol-08-1sm" style="IBUITableViewCellStyleDefault" id="d8U-Ru-hVy" customClass="SettingsTableViewCell" customModule="Hackers" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="175" width="343" height="44"/>
+                                        <rect key="frame" x="16" y="174.5" width="343" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="d8U-Ru-hVy" id="9oy-Wa-MHK">
-                                            <rect key="frame" x="0.0" y="0.0" width="317.5" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="318.5" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Send Feedback" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mol-08-1sm">
-                                                    <rect key="frame" x="16" y="0.0" width="293.5" height="44"/>
+                                                    <rect key="frame" x="16" y="0.0" width="294.5" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -428,14 +448,14 @@
                                         <color key="backgroundColor" systemColor="tableCellGroupedBackgroundColor"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="Mop-dp-piY" style="IBUITableViewCellStyleDefault" id="As0-J3-za5" customClass="SettingsTableViewCell" customModule="Hackers" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="219" width="343" height="44"/>
+                                        <rect key="frame" x="16" y="218" width="343" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="As0-J3-za5" id="GYg-SA-IFp">
-                                            <rect key="frame" x="0.0" y="0.0" width="317.5" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="318.5" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="What's New" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mop-dp-piY">
-                                                    <rect key="frame" x="16" y="0.0" width="293.5" height="44"/>
+                                                    <rect key="frame" x="16" y="0.0" width="294.5" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -450,10 +470,10 @@
                             <tableViewSection headerTitle="Login" id="cxD-wx-jlJ">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="EN8-wt-Iug" detailTextLabel="PDK-aN-wRW" style="IBUITableViewCellStyleValue1" id="b2z-TO-21M" customClass="SettingsTableViewCell" customModule="Hackers" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="313" width="343" height="44"/>
+                                        <rect key="frame" x="16" y="311.5" width="343" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b2z-TO-21M" id="Nqt-rx-GbL">
-                                            <rect key="frame" x="0.0" y="0.0" width="317.5" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="318.5" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EN8-wt-Iug">
@@ -464,7 +484,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Not logged in" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PDK-aN-wRW">
-                                                    <rect key="frame" x="207" y="12" width="102.5" height="20.5"/>
+                                                    <rect key="frame" x="208" y="12" width="102.5" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -479,10 +499,10 @@
                             <tableViewSection headerTitle="Interface" id="gib-U9-aJ3" userLabel="Feed">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="XYf-0N-FG9" customClass="SettingsTableViewCell" customModule="Hackers" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="407" width="343" height="44"/>
+                                        <rect key="frame" x="16" y="405" width="343" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XYf-0N-FG9" id="QjQ-cP-q8a">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show Thumbnails" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65F-Rn-FAZ">
@@ -511,14 +531,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="ila-G7-nJ9" customClass="SettingsTableViewCell" customModule="Hackers" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="451" width="343" height="44"/>
+                                        <rect key="frame" x="16" y="448.5" width="343" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ila-G7-nJ9" id="pfP-AY-HJQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe Actions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MXF-rP-Tah">
-                                                    <rect key="frame" x="16" y="13.5" width="92" height="17"/>
+                                                    <rect key="frame" x="16" y="13.5" width="91.5" height="17"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -544,10 +564,10 @@
                             <tableViewSection headerTitle="Reading" id="1AH-ih-fLT">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="by2-0S-CnW" customClass="SettingsTableViewCell" customModule="Hackers" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="545" width="343" height="44"/>
+                                        <rect key="frame" x="16" y="542" width="343" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="by2-0S-CnW" id="l0C-ZL-f1a">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open in Default Browser" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcq-dD-Aiv">
@@ -573,7 +593,7 @@
                                         <color key="backgroundColor" systemColor="tableCellGroupedBackgroundColor"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="SLb-pc-dXs" customClass="SettingsTableViewCell" customModule="Hackers" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="589" width="343" height="44"/>
+                                        <rect key="frame" x="16" y="585.5" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SLb-pc-dXs" id="6r6-dg-b6u">
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
@@ -621,6 +641,11 @@
                     </navigationItem>
                     <connections>
                         <outlet property="accountLabel" destination="EN8-wt-Iug" id="dpg-ot-HmF"/>
+                        <outlet property="appImage" destination="KoL-fQ-BBi" id="MXj-L4-iso"/>
+                        <outlet property="appNameLabel" destination="Zsb-oN-k0j" id="Ed0-It-6e0"/>
+                        <outlet property="authorNameLabel" destination="7cA-CA-hQh" id="gJh-sS-u7u"/>
+                        <outlet property="feedbackLabel" destination="Mol-08-1sm" id="fS6-ya-oAf"/>
+                        <outlet property="gitHubLabel" destination="qQX-ZY-Ize" id="JYu-UA-OLZ"/>
                         <outlet property="openInDefaultBrowserLabel" destination="wlj-6e-BYP" id="eel-LZ-2Jz"/>
                         <outlet property="openInDefaultBrowserSwitch" destination="g4G-LF-pRI" id="M9B-7A-i52"/>
                         <outlet property="safariReaderModeSwitch" destination="cmY-8P-GUK" id="6fh-TZ-GYa"/>
@@ -628,6 +653,7 @@
                         <outlet property="swipeActionsSwitch" destination="VQH-5Z-1Ir" id="hl6-Y0-Z63"/>
                         <outlet property="usernameLabel" destination="PDK-aN-wRW" id="lDn-Zb-2N1"/>
                         <outlet property="versionLabel" destination="vai-hd-k76" id="t8A-MH-SCD"/>
+                        <outlet property="whatsNewLabel" destination="Mop-dp-piY" id="EEc-w1-Ols"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KhC-65-Tqy" userLabel="First Responder" sceneMemberID="firstResponder"/>

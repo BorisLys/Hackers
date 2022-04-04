@@ -24,7 +24,13 @@ class SettingsViewController: UITableViewController {
     @IBOutlet weak var openInDefaultBrowserSwitch: UISwitch!
     @IBOutlet weak var openInDefaultBrowserLabel: UILabel!
     @IBOutlet weak var versionLabel: UILabel!
-
+    @IBOutlet weak var gitHubLabel: UILabel!
+    @IBOutlet weak var feedbackLabel: UILabel!
+    @IBOutlet weak var whatsNewLabel: UILabel!
+    @IBOutlet weak var appNameLabel: UILabel!
+    @IBOutlet weak var authorNameLabel: UILabel!
+    @IBOutlet weak var appImage: UIImageView!
+    
     private var notificationToken: NotificationToken?
 
     override func viewDidLoad() {
@@ -35,6 +41,7 @@ class SettingsViewController: UITableViewController {
         updateOpenInDefaultBrowser()
         updateUsername()
         updateVersion()
+        setUpAccessibilityIdentifier()
         notificationToken = NotificationCenter.default
             .observe(name: Notification.Name.refreshRequired,
                      object: nil, queue: .main) { _ in self.updateUsername() }
@@ -152,5 +159,24 @@ extension SettingsViewController: MFMailComposeViewControllerDelegate {
     func mailComposeController(_ controller: MFMailComposeViewController,
                                didFinishWith result: MFMailComposeResult, error: Error?) {
         controller.dismiss(animated: true)
+    }
+}
+
+extension SettingsViewController {
+    private func setUpAccessibilityIdentifier() {
+        accountLabel.accessibilityIdentifier = AccessibilityIDs.SettingsScreen.StaticText.accountLabel.accessibilityID
+        usernameLabel.accessibilityIdentifier = AccessibilityIDs.SettingsScreen.StaticText.usernameLabel.accessibilityID
+        showThumbnailsSwitch.accessibilityIdentifier = AccessibilityIDs.SettingsScreen.Button.showThumbnailsSwitch.accessibilityID
+        swipeActionsSwitch.accessibilityIdentifier = AccessibilityIDs.SettingsScreen.Button.swipeActionsSwitch.accessibilityID
+        safariReaderModeSwitch.accessibilityIdentifier = AccessibilityIDs.SettingsScreen.Button.safariReaderModeSwitch.accessibilityID
+        openInDefaultBrowserSwitch.accessibilityIdentifier = AccessibilityIDs.SettingsScreen.Button.openInDefaultBrowserSwitch.accessibilityID
+        openInDefaultBrowserLabel.accessibilityIdentifier = AccessibilityIDs.SettingsScreen.Button.openInDefaultBrowserSwitch.accessibilityID
+        versionLabel.accessibilityIdentifier = AccessibilityIDs.SettingsScreen.StaticText.versionLabel.accessibilityID
+        gitHubLabel.accessibilityIdentifier = AccessibilityIDs.SettingsScreen.StaticText.gitHubLabel.accessibilityID
+        feedbackLabel.accessibilityIdentifier = AccessibilityIDs.SettingsScreen.StaticText.feedbackLabel.accessibilityID
+        whatsNewLabel.accessibilityIdentifier = AccessibilityIDs.SettingsScreen.StaticText.whatsNewLabel.accessibilityID
+        appNameLabel.accessibilityIdentifier = AccessibilityIDs.SettingsScreen.StaticText.appNameLabel.accessibilityID
+        authorNameLabel.accessibilityIdentifier = AccessibilityIDs.SettingsScreen.StaticText.authorNameLabel.accessibilityID
+        appImage.accessibilityIdentifier = AccessibilityIDs.SettingsScreen.Image.appImage.accessibilityID
     }
 }

@@ -157,5 +157,10 @@ extension CommentTableViewCell {
     private func applyAuthorLabelTheme() {
         authorLabel.textColor = self.isPostAuthor ? AppTheme.default.appTintColor : AppTheme.default.titleTextColor
     }
+}
 
+extension CommentTableViewCell {
+    private func setUpAccebilityIDs() {
+        
+    }
 }
