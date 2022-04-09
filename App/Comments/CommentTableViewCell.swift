@@ -82,6 +82,7 @@ class CommentTableViewCell: SwipeTableViewCell {
 
             commentTextView.attributedText = commentAttributedString
         }
+        setUpAccessibilityIdentifier()
     }
 
     private func parseToAttributedString(_ html: String) -> NSMutableAttributedString {
@@ -158,4 +159,11 @@ extension CommentTableViewCell {
         authorLabel.textColor = self.isPostAuthor ? AppTheme.default.appTintColor : AppTheme.default.titleTextColor
     }
 
+}
+
+extension CommentTableViewCell {
+    func setUpAccessibilityIdentifier() {
+        authorLabel.accessibilityIdentifier = AccessibilityIDs.FeedCommentsScreen.StaticText.authorLabel.accessibilityID
+        datePostedLabel.accessibilityIdentifier = AccessibilityIDs.FeedCommentsScreen.StaticText.datePostedLabel.accessibilityID
+    }
 }

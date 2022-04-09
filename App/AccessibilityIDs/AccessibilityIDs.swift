@@ -38,9 +38,14 @@ public struct AccessibilityIDs {
     
     public enum FeedScreen {
         
+        enum StaticText: AccessibilityIDProviderProtocol {
+            case titleLabel
+            case metadataLabel
+        }
+        
     }
     
-    public enum FeedDetailsScreen {
+    public enum FeedCommentsScreen {
         enum StaticText: AccessibilityIDProviderProtocol {
             case authorLabel
             case datePostedLabel

@@ -30,6 +30,7 @@ class ItemCell: UICollectionViewListCell {
 
         titleLabel.text = post.title
         metadataLabel.attributedText = metadataText(for: post)
+        setUpAccessibilityIdentifier()
 
         setupThumbnailGesture()
     }
@@ -116,5 +117,12 @@ extension ItemCell {
         attachment.image = image
         attachment.bounds = CGRect(x: 0, y: -2, width: image.size.width, height: image.size.height)
         return attachment
+    }
+}
+
+extension ItemCell {
+    func setUpAccessibilityIdentifier() {
+        titleLabel.accessibilityIdentifier = AccessibilityIDs.FeedScreen.StaticText.titleLabel.accessibilityID
+        metadataLabel.accessibilityIdentifier = AccessibilityIDs.FeedScreen.StaticText.metadataLabel.accessibilityID
     }
 }
