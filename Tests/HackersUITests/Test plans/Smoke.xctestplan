@@ -1,0 +1,28 @@
+{
+  "configurations" : [
+    {
+      "id" : "9F678DDE-D411-4756-8646-7FDEF269D782",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false
+  },
+  "testTargets" : [
+    {
+      "skippedTests" : [
+        "CommonTest",
+        "HackersUITests"
+      ],
+      "target" : {
+        "containerPath" : "container:Hackers.xcodeproj",
+        "identifier" : "245345EB22466EA8001AF1CE",
+        "name" : "HackersUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

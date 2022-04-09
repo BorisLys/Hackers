@@ -88,6 +88,8 @@
 		B6C8D73628014B5C00BD9C28 /* SettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8D73528014B5C00BD9C28 /* SettingsPage.swift */; };
 		B6C8D73828014B6F00BD9C28 /* FeedCommentsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8D73728014B6F00BD9C28 /* FeedCommentsPage.swift */; };
 		B6C8D73A2801554300BD9C28 /* CommonPage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8D7392801554300BD9C28 /* CommonPage+Extensions.swift */; };
+		B6C8D73D2801723300BD9C28 /* SmokeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8D73C2801723300BD9C28 /* SmokeTests.swift */; };
+		B6C8D73F2801724200BD9C28 /* PerfomanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8D73E2801724200BD9C28 /* PerfomanceTests.swift */; };
 		DF68752992A90A126C292CD9 /* Pods_Hackers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0376FCAAF4C3EBA38572A82 /* Pods_Hackers.framework */; };
 /* End PBXBuildFile section */
 
@@ -228,6 +230,10 @@
 		B6C8D73528014B5C00BD9C28 /* SettingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPage.swift; sourceTree = "<group>"; };
 		B6C8D73728014B6F00BD9C28 /* FeedCommentsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCommentsPage.swift; sourceTree = "<group>"; };
 		B6C8D7392801554300BD9C28 /* CommonPage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommonPage+Extensions.swift"; sourceTree = "<group>"; };
+		B6C8D73C2801723300BD9C28 /* SmokeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokeTests.swift; sourceTree = "<group>"; };
+		B6C8D73E2801724200BD9C28 /* PerfomanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfomanceTests.swift; sourceTree = "<group>"; };
+		B6C8D740280172D800BD9C28 /* Smoke.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Smoke.xctestplan; sourceTree = "<group>"; };
+		B6C8D741280172F400BD9C28 /* Perfomance.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Perfomance.xctestplan; sourceTree = "<group>"; };
 		F0376FCAAF4C3EBA38572A82 /* Pods_Hackers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hackers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -308,6 +314,7 @@
 		245345ED22466EA8001AF1CE /* HackersUITests */ = {
 			isa = PBXGroup;
 			children = (
+				B6C8D73B2801721900BD9C28 /* Test plans */,
 				B6C8D73028014A6400BD9C28 /* Extensions */,
 				B6C8D72D280149AD00BD9C28 /* Tests */,
 				B6C8D72A2801495200BD9C28 /* Pages */,
@@ -591,6 +598,8 @@
 			isa = PBXGroup;
 			children = (
 				B6C8D72E280149D400BD9C28 /* CommonTest.swift */,
+				B6C8D73C2801723300BD9C28 /* SmokeTests.swift */,
+				B6C8D73E2801724200BD9C28 /* PerfomanceTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -602,6 +611,15 @@
 				B6C8D7392801554300BD9C28 /* CommonPage+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B6C8D73B2801721900BD9C28 /* Test plans */ = {
+			isa = PBXGroup;
+			children = (
+				B6C8D740280172D800BD9C28 /* Smoke.xctestplan */,
+				B6C8D741280172F400BD9C28 /* Perfomance.xctestplan */,
+			);
+			path = "Test plans";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -965,9 +983,11 @@
 			files = (
 				B6C8D73828014B6F00BD9C28 /* FeedCommentsPage.swift in Sources */,
 				B6C8D73A2801554300BD9C28 /* CommonPage+Extensions.swift in Sources */,
+				B6C8D73F2801724200BD9C28 /* PerfomanceTests.swift in Sources */,
 				B6C8D72F280149D400BD9C28 /* CommonTest.swift in Sources */,
 				245345EF22466EA8001AF1CE /* HackersUITests.swift in Sources */,
 				B6C8D73428014B4B00BD9C28 /* FeedPage.swift in Sources */,
+				B6C8D73D2801723300BD9C28 /* SmokeTests.swift in Sources */,
 				B6C8D72C2801496200BD9C28 /* CommonPage.swift in Sources */,
 				245345FB22466F75001AF1CE /* SnapshotHelper.swift in Sources */,
 				B6C8D73628014B5C00BD9C28 /* SettingsPage.swift in Sources */,

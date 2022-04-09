@@ -1,46 +1,21 @@
 default_platform(:ios)
 
 platform :ios do
-  desc "Generate new screenshots"
-  lane :screenshots do
-    capture_screenshots(
-      workspace: "Hackers.xcworkspace", 
-      scheme: "Hackers",
-      override_status_bar: true
-    )
-    frameit(
-      path: "./fastlane/screenshots/"
-    )
-    # upload_to_app_store(skip_binary_upload: true, skip_metadata: true)
-  end
-
-  desc "Run Tests"
-  lane :test do
-    scan(
-      scheme: "HackersUITests",
-      derived_data_path: "scan_derived_data" # https://github.com/fastlane/fastlane/issues/15768
+  desc "Run Smoke Tests"
+  lane :smoke_test do
+    run_tests(
+       workspace: "Hackers.xcworkspace",
+       device: "iPhone 8",
+       testplan: "Smoke"
     )
   end
 
-  desc "Build"
-  lane :build do |options|
-    xcodebuild(
-      workspace: "Hackers.xcworkspace",
-      scheme: "Hackers",
-      configuration: "Debug",
-      clean: options[:clean],
-      build: true,
-      sdk: "iphonesimulator"
+  desc "Run Perfomance Tests"
+  lane :perfomance_test do
+    run_tests(
+       workspace: "Hackers.xcworkspace",
+       device: "iPhone 8",
+       testplan: "Perfomance"
     )
-  end
-
-  desc "Archive"
-  lane :archive do
-    gym(scheme: "Hackers")
-  end
-
-  desc "Lint"
-  lane :lint do
-    swiftlint
   end
 end

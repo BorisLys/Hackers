@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "9E81C0B9-65B6-4E04-BE4F-FF07A1672E9A",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "skippedTests" : [
+        "CommonTest",
+        "HackersUITests",
+        "SmokeTests"
+      ],
+      "target" : {
+        "containerPath" : "container:Hackers.xcodeproj",
+        "identifier" : "245345EB22466EA8001AF1CE",
+        "name" : "HackersUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
