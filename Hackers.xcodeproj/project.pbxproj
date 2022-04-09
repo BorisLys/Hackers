@@ -81,6 +81,13 @@
 		698FE7B523EE5FE300F5828C /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 698FE7B423EE5FE300F5828C /* Colors.xcassets */; };
 		B6C8D7272801409300BD9C28 /* AccessibilityIDProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8D7262801409300BD9C28 /* AccessibilityIDProviderProtocol.swift */; };
 		B6C8D729280140B600BD9C28 /* AccessibilityIDs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8D728280140B600BD9C28 /* AccessibilityIDs.swift */; };
+		B6C8D72C2801496200BD9C28 /* CommonPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8D72B2801496200BD9C28 /* CommonPage.swift */; };
+		B6C8D72F280149D400BD9C28 /* CommonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8D72E280149D400BD9C28 /* CommonTest.swift */; };
+		B6C8D73228014ADF00BD9C28 /* XCUIElement+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8D73128014ADF00BD9C28 /* XCUIElement+Extensions.swift */; };
+		B6C8D73428014B4B00BD9C28 /* FeedPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8D73328014B4B00BD9C28 /* FeedPage.swift */; };
+		B6C8D73628014B5C00BD9C28 /* SettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8D73528014B5C00BD9C28 /* SettingsPage.swift */; };
+		B6C8D73828014B6F00BD9C28 /* FeedCommentsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8D73728014B6F00BD9C28 /* FeedCommentsPage.swift */; };
+		B6C8D73A2801554300BD9C28 /* CommonPage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8D7392801554300BD9C28 /* CommonPage+Extensions.swift */; };
 		DF68752992A90A126C292CD9 /* Pods_Hackers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0376FCAAF4C3EBA38572A82 /* Pods_Hackers.framework */; };
 /* End PBXBuildFile section */
 
@@ -214,6 +221,13 @@
 		9D41F6A856DA1B6671301AAD /* Pods-Hackers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackers.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hackers/Pods-Hackers.release.xcconfig"; sourceTree = "<group>"; };
 		B6C8D7262801409300BD9C28 /* AccessibilityIDProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityIDProviderProtocol.swift; sourceTree = "<group>"; };
 		B6C8D728280140B600BD9C28 /* AccessibilityIDs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityIDs.swift; sourceTree = "<group>"; };
+		B6C8D72B2801496200BD9C28 /* CommonPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonPage.swift; sourceTree = "<group>"; };
+		B6C8D72E280149D400BD9C28 /* CommonTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTest.swift; sourceTree = "<group>"; };
+		B6C8D73128014ADF00BD9C28 /* XCUIElement+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIElement+Extensions.swift"; sourceTree = "<group>"; };
+		B6C8D73328014B4B00BD9C28 /* FeedPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPage.swift; sourceTree = "<group>"; };
+		B6C8D73528014B5C00BD9C28 /* SettingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPage.swift; sourceTree = "<group>"; };
+		B6C8D73728014B6F00BD9C28 /* FeedCommentsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCommentsPage.swift; sourceTree = "<group>"; };
+		B6C8D7392801554300BD9C28 /* CommonPage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommonPage+Extensions.swift"; sourceTree = "<group>"; };
 		F0376FCAAF4C3EBA38572A82 /* Pods_Hackers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hackers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -294,6 +308,9 @@
 		245345ED22466EA8001AF1CE /* HackersUITests */ = {
 			isa = PBXGroup;
 			children = (
+				B6C8D73028014A6400BD9C28 /* Extensions */,
+				B6C8D72D280149AD00BD9C28 /* Tests */,
+				B6C8D72A2801495200BD9C28 /* Pages */,
 				245345EE22466EA8001AF1CE /* HackersUITests.swift */,
 				245345F022466EA8001AF1CE /* Info.plist */,
 			);
@@ -557,6 +574,34 @@
 				B6C8D728280140B600BD9C28 /* AccessibilityIDs.swift */,
 			);
 			path = AccessibilityIDs;
+			sourceTree = "<group>";
+		};
+		B6C8D72A2801495200BD9C28 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				B6C8D72B2801496200BD9C28 /* CommonPage.swift */,
+				B6C8D73328014B4B00BD9C28 /* FeedPage.swift */,
+				B6C8D73528014B5C00BD9C28 /* SettingsPage.swift */,
+				B6C8D73728014B6F00BD9C28 /* FeedCommentsPage.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		B6C8D72D280149AD00BD9C28 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B6C8D72E280149D400BD9C28 /* CommonTest.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		B6C8D73028014A6400BD9C28 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B6C8D73128014ADF00BD9C28 /* XCUIElement+Extensions.swift */,
+				B6C8D7392801554300BD9C28 /* CommonPage+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -918,8 +963,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6C8D73828014B6F00BD9C28 /* FeedCommentsPage.swift in Sources */,
+				B6C8D73A2801554300BD9C28 /* CommonPage+Extensions.swift in Sources */,
+				B6C8D72F280149D400BD9C28 /* CommonTest.swift in Sources */,
 				245345EF22466EA8001AF1CE /* HackersUITests.swift in Sources */,
+				B6C8D73428014B4B00BD9C28 /* FeedPage.swift in Sources */,
+				B6C8D72C2801496200BD9C28 /* CommonPage.swift in Sources */,
 				245345FB22466F75001AF1CE /* SnapshotHelper.swift in Sources */,
+				B6C8D73628014B5C00BD9C28 /* SettingsPage.swift in Sources */,
+				B6C8D73228014ADF00BD9C28 /* XCUIElement+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1116,7 +1168,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = Tests/HackersUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -1151,7 +1203,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = Tests/HackersUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;

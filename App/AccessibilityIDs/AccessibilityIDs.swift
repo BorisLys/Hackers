@@ -12,7 +12,7 @@ public struct AccessibilityIDs {
 
     public enum SettingsScreen {
         
-        enum StaticText: AccessibilityIDProviderProtocol {
+        public enum StaticText: AccessibilityIDProviderProtocol {
             case accountLabel
             case usernameLabel
             case versionLabel
@@ -24,21 +24,21 @@ public struct AccessibilityIDs {
             case openInDefaultBrowserLabel
         }
         
-        enum Button: AccessibilityIDProviderProtocol {
+        public enum Button: AccessibilityIDProviderProtocol {
             case showThumbnailsSwitch
             case swipeActionsSwitch
             case safariReaderModeSwitch
             case openInDefaultBrowserSwitch
         }
         
-        enum Image: AccessibilityIDProviderProtocol {
+        public enum Image: AccessibilityIDProviderProtocol {
             case appImage
         }
     }
     
     public enum FeedScreen {
         
-        enum StaticText: AccessibilityIDProviderProtocol {
+        public enum StaticText: AccessibilityIDProviderProtocol {
             case titleLabel
             case metadataLabel
         }
@@ -46,7 +46,7 @@ public struct AccessibilityIDs {
     }
     
     public enum FeedCommentsScreen {
-        enum StaticText: AccessibilityIDProviderProtocol {
+        public enum StaticText: AccessibilityIDProviderProtocol {
             case authorLabel
             case datePostedLabel
         }
